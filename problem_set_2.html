@@ -2,7 +2,11 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <script>
 function myfunction() {
@@ -18,10 +22,15 @@ textbox3.value=answer;
 <h1>Multiplier</h1>
 
 <p>Type in 2 numbers you would like to multiply
-<input type="text" name="textbox1" id="textbox1" /> x <input type="text" name="textbox2" id="textbox2" />
-<input type="submit" name="button" id="button1" onclick="myfunction()" value="=" />
+<input type="text" class="form-control" placeholder="Number 1" name="textbox1" id="textbox1" />
+ x
+<input type="text" class="form-control" placeholder="Number 2"name="textbox2" id="textbox2" />
+<br/>
+
+<button type="button" class="btn btn-danger" onclick="myfunction()" value="=">is equal to</button>
+
 <br/>
 Your answer is:--
-<input type="text" name="textbox3" id="textbox3" readonly="true"/>
+<input type="text" name="textbox3"class="form-control" placeholder="Answer" id="textbox3" readonly="true"/>
 </body>
  </html>
